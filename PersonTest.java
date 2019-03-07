@@ -33,7 +33,12 @@ public class PersonTest
 	@Test
 	public void CompareSickPersonTest()
 	{
-		
+		SickPerson s2 = new SickPerson("Phil Coulson", 30, 10);
+		SickPerson s3 = new SickPerson("Tony Stark", 34, 6);
+		SickPerson s4 = new SickPerson("Pietro Maximoff", 22, 10);
+		Assert.assertEquals("First SickPerson compareTo test incorrect.", -1, s2.compareTo(s3), 0.0001);
+		Assert.assertEquals("Second SickPerson compareTo test incorrect.", 1, s3.compareTo(s2), 0.0001);
+		Assert.assertEquals("Third SickPerson compareTo test incorrect.", 0, s4.compareTo(s2), 0.0001);
 	}
 	
 	@Test
