@@ -6,7 +6,7 @@
  */
 public class SickPerson extends Person {
 
-	/**
+	/*
 	 * The severity of the illness in the SickPerson. The higher the value, the more severe the illness.
 	 */
 	private int severity;
@@ -42,12 +42,11 @@ public class SickPerson extends Person {
 	/**
 	 * Gives some information about the SickPerson.
 	 * 
-	 * @return The String "%s Severity level %d" with replacements of the super's toString and the SickPerson severity.
+	 * @return The String  with replacements of the super's toString and the SickPerson severity.
 	 */
 	@Override
 	public String toString()
 	{
-		// TODO finish toString method
-		return null;
+		return String.format("%s Severity level %d", super.toString(), severity);
 	}
 }
