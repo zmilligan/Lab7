@@ -23,7 +23,11 @@ public class PersonTest
 	@Test
 	public void HealthyPersonTest()
 	{
-		
+		HealthyPerson h1 = new HealthyPerson("Thor Odinson", 1247, "Experiencing modern earthly medicinal practices");
+		Assert.assertEquals("HealthyPerson name incorrect.", "Thor Odinson", h1.getName());
+		Assert.assertEquals("HealthyPerson age incorrect.", 1247, h1.getAge(), 0.0001);
+		Assert.assertEquals("HealthyPerson toString incorrect.", 
+				"Thor Odinson, a 1247-year old. In for Experiencing modern earthly medicinal practices", h1.toString());
 	}
 	
 	@Test

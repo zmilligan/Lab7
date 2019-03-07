@@ -11,6 +11,12 @@ Tasks:
 3. SickPerson, HealthyPerson toString methods
 4. Sick Person compareTo method
 5. HealthyPerson compareTo method
+6. Create PersonTest class skeleton
+7. SickPerson test
+8. HealthyPerson test
+9. CompareSickPerson test
+10. CompareHealthyPerson test
+11. CompareDifferentTypes test
 
 Estimated Time (minutes):
 1. 25
@@ -18,6 +24,12 @@ Estimated Time (minutes):
 3. 4
 4. 5
 5. 5
+6. 7
+7. 10
+8. 10
+9. 8
+10. 8
+11. 5
 
 Actual Time (minutes):
 1. 21
@@ -25,4 +37,10 @@ Actual Time (minutes):
 3. 3
 4. 8
 5. 3
+6. 7
+7. 7
+8. 8
+9. 
+10. 
+11. 
 */}
