@@ -5,7 +5,7 @@
  */
 public class HealthyPerson extends Person
 {
-	/**
+	/*
 	 * The HealthyPerson's reason for visiting the Hospital (e.g. a yearly checkup).
 	 */
 	private String reason;
@@ -45,7 +45,6 @@ Parameters:Returns:* @param o The other Person to compare self to.
 	@Override
 	public String toString()
 	{
-		// TODO finish toString method
-		return null;
+		return String.format("%s In for %s", super.toString(), reason);
 	}
 }
