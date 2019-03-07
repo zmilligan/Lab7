@@ -32,9 +32,13 @@ Parameters:Returns:* @param o The other Person to compare self to.
 	 * Orders alphabetically.
 	 */
 	@Override
-	protected int compareToImpl(Person p) {
-		// TODO finish compareTo method
-		return 0;
+	protected int compareToImpl(Person p)
+	{
+		if(!this.getClass().getName().equals(p.getClass().getName()))
+		{
+			return 0;
+		}
+		return this.getName().compareTo(p.getName());
 	}
 	
 	/**

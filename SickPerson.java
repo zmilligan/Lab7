@@ -34,8 +34,21 @@ public class SickPerson extends Person {
 	 * Orders by decreasing severity.
 	 */
 	@Override
-	protected int compareToImpl(Person p) {
-		// TODO finish compareTo method
+	protected int compareToImpl(Person p)
+	{
+		if(!this.getClass().getName().equals(p.getClass().getName()))
+		{
+			return 0;
+		}
+		SickPerson sp = (SickPerson) p;
+		if(this.severity > sp.severity)
+		{
+			return -1;
+		}
+		if(this.severity < sp.severity)
+		{
+			return 1;
+		}
 		return 0;
 	}
 	
