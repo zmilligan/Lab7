@@ -44,7 +44,12 @@ public class PersonTest
 	@Test
 	public void CompareHealthyPersonTest()
 	{
-		
+		HealthyPerson h2 = new HealthyPerson("Bruce Banner", 32, "anger management issues follow-up");
+		HealthyPerson h3 = new HealthyPerson("Clint Barton", 34, "quarterly physical");
+		HealthyPerson h4 = new HealthyPerson("Bruce Banner", 30, "quarterly physical");
+		Assert.assertEquals("First HealthyPerson compareTo test incorrect.", -1, h2.compareTo(h3), 0.0001);
+		Assert.assertEquals("Second HealthyPerson compareTo test incorrect.", 1, h3.compareTo(h2), 0.0001);
+		Assert.assertEquals("Third HealthyPerson compareTo test incorrect.", 0, h4.compareTo(h2), 0.0001);
 	}
 	
 	@Test
