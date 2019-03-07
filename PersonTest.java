@@ -55,6 +55,9 @@ public class PersonTest
 	@Test
 	public void CompareDifferentTypesTest()
 	{
-		
+		SickPerson s5 = new SickPerson("Wanda Maximoff", 22, 4);
+		HealthyPerson h5 = new HealthyPerson("Natasha Romanoff", 32, "quarterly physical");
+		Assert.assertEquals("HealthyPerson different types compareTo incorrect.", 0, s5.compareTo(h5), 0.0001);
+		Assert.assertEquals("SickPerson different types compareTo incorrect.", 0, h5.compareTo(s5), 0.0001);
 	}
 }
