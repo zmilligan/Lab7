@@ -20,8 +20,13 @@ Tasks:
 12. StackHospital instance data and constructor
 13. StackHospital add and next patient methods
 14. StackHospital type and patientInfo methods
-15. 
-16. 
+15. QueueHospital instance data and constructor
+16. QueueHospital add and next patient methods
+17. QueueHospital type and patientInfo methods
+18. PQueue instance data and constructor
+19. PQueue type and patientInfo method
+20. PQueue next patient methods
+21. PQueue add method
 
 Estimated Time (minutes):
 1. 25
@@ -38,8 +43,13 @@ Estimated Time (minutes):
 12. 5
 13. 5
 14. 2
-15. 
-16. 
+15. 5
+16. 4
+17. 2
+18. 3
+19. 3
+20. 3
+21. 10
 
 Actual Time (minutes):
 1. 21
@@ -56,6 +66,11 @@ Actual Time (minutes):
 12. 2
 13. 4
 14. 2
-15. 
-16. 
+15. 4
+16. 3
+17. 2
+18. 3
+19. 2
+20. 
+21. 
 */}
