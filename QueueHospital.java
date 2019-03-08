@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Class representing a Hospital that orders its patients in the following way:
  * Patients are ordered via a Queue. That is, the first patient admitted is the first to be treated. If more patients
@@ -9,35 +12,37 @@
  */
 public class QueueHospital<PatientType> extends Hospital<PatientType>
 {	
+	/*
+	 * The patient queue
+	 */
+	private Queue<PatientType> patients;
+	
 	/**
 	 * Initializes the Patient Queue.
 	 */
 	public QueueHospital()
 	{
-		//TODO finish constructor
+		patients = new LinkedList<PatientType>();
 	}
 	
 	public void addPatient(PatientType patient)
 	{
-		//TODO: finish method
+		patients.add(patient);
 	}
 	
 	public PatientType nextPatient()
 	{
-		//TODO: finish method
-		return null;
+		return patients.peek();
 	}
 	
 	public PatientType treatNextPatient()
 	{
-		//TODO: finish method
-		return null;
+		return patients.poll();
 	}
 	
 	public int numPatients()
 	{
-		//TODO: finish method
-		return 0;
+		return patients.size();
 	}
 	
 	public String hospitalType()
