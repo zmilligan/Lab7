@@ -17,6 +17,11 @@ Tasks:
 9. CompareSickPerson test
 10. CompareHealthyPerson test
 11. CompareDifferentTypes test
+12. StackHospital instance data and constructor
+13. StackHospital add and next patient methods
+14. 
+15. 
+16. 
 
 Estimated Time (minutes):
 1. 25
@@ -30,6 +35,11 @@ Estimated Time (minutes):
 9. 8
 10. 8
 11. 5
+12. 5
+13. 5
+14. 
+15. 
+16. 
 
 Actual Time (minutes):
 1. 21
@@ -43,4 +53,9 @@ Actual Time (minutes):
 9. 7
 10. 5
 11. 3
+12. 2
+13. 4
+14. 
+15. 
+16. 
 */}

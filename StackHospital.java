@@ -1,3 +1,5 @@
+import java.util.Stack;
+
 /**
  * Class representing a Hospital that orders its patients in the following way:
  * Patients are ordered via a Stack. That is, the most recent patient admitted is the first to be treated.
@@ -10,33 +12,35 @@
  */
 public class StackHospital<PatientType> extends Hospital<PatientType>
 {	
+	/*
+	 * The Patient stack
+	 */
+	private Stack<PatientType> patients;
+	
 	/**
 	 * Initializes the Patient Stack.
 	 */
 	public StackHospital()
 	{
-		//TODO finish constructor
+		patients = new Stack<PatientType>();
 	}
 	
 	public void addPatient(PatientType patient)
 	{
-		//TODO: finish method
+		patients.push(patient);
 	}
 	
 	public PatientType nextPatient()
 	{
-		//TODO: finish method
-		return null;
+		return patients.peek();
 	}
 	public PatientType treatNextPatient()
 	{
-		//TODO: finish method
-		return null;
+		return patients.pop();
 	}
 	public int numPatients()
 	{
-		//TODO: finish method
-		return 0;
+		return patients.size();
 	}
 	public String hospitalType()
 	{
