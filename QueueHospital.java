@@ -47,13 +47,16 @@ public class QueueHospital<PatientType> extends Hospital<PatientType>
 	
 	public String hospitalType()
 	{
-		//TODO: finish method
-		return null;
+		return "QueueHospital";
 	}
 	
 	public String allPatientInfo()
 	{
-		//TODO: finish method
-		return null;
+		String info = "";
+		for(PatientType p : patients)
+		{
+			info += p.toString();
+		}
+		return info;
 	}
 }
