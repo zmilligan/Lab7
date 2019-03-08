@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Class representing a Hospital that orders its patients in the following way:
  * Patients are ordered via a PriorityQueue. That is, the first patient admitted is the first to be treated.
@@ -13,12 +15,19 @@
  */
 public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>
 {	
+	/*
+	 * The patient priority queue
+	 * I haven't decided yet what type of list would be the best to do, so this is subject to change.
+	 */
+	private ArrayList<PatientType> patients;
+	
 	/**
 	 * Initializes the Patient PriorityQueue.
 	 */
 	public PriorityQueueHospital()
 	{
-		//TODO finish constructor
+		//The type of list will need to be updated if changed, but I wanted to have something.
+		patients = new ArrayList<PatientType>();
 	}
 	
 	public void addPatient(PatientType patient)
@@ -40,19 +49,21 @@ public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>
 	
 	public int numPatients()
 	{
-		//TODO: finish method
-		return 0;
+		return patients.size();
 	}
 	
 	public String hospitalType()
 	{
-		//TODO: finish method
-		return null;
+		return "PriorityQueue";
 	}
 	
 	public String allPatientInfo()
 	{
-		//TODO: finish method
-		return null;
+		String info = "";
+		for (PatientType p : patients)
+		{
+			info += p.toString();
+		}
+		return info;
 	}
 }
