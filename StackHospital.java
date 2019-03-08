@@ -44,12 +44,15 @@ public class StackHospital<PatientType> extends Hospital<PatientType>
 	}
 	public String hospitalType()
 	{
-		//TODO: finish method
-		return null;
+		return "StackHospital";
 	}
 	public String allPatientInfo()
 	{
-		//TODO: finish method
-		return null;
+		String info = "";
+		for(PatientType p: patients)
+		{
+			info += p.toString();
+		}
+		return info;
 	}
 }

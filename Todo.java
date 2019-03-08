@@ -19,7 +19,7 @@ Tasks:
 11. CompareDifferentTypes test
 12. StackHospital instance data and constructor
 13. StackHospital add and next patient methods
-14. 
+14. StackHospital type and patientInfo methods
 15. 
 16. 
 
@@ -37,7 +37,7 @@ Estimated Time (minutes):
 11. 5
 12. 5
 13. 5
-14. 
+14. 2
 15. 
 16. 
 
@@ -55,7 +55,7 @@ Actual Time (minutes):
 11. 3
 12. 2
 13. 4
-14. 
+14. 2
 15. 
 16. 
 */}
