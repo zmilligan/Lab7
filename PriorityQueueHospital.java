@@ -37,14 +37,14 @@ public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>
 	
 	public PatientType nextPatient()
 	{
-		//TODO: finish method
-		return null;
+		return patients.get(0);
 	}
 	
 	public PatientType treatNextPatient()
 	{
-		//TODO: finish method
-		return null;
+		PatientType p = patients.get(0);
+		patients.remove(0);
+		return p;
 	}
 	
 	public int numPatients()
