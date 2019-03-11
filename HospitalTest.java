@@ -29,4 +29,23 @@ public class HospitalTest
 		Assert.assertEquals("StackHospital treatNextPatient incorrect.", s2, sh1.treatNextPatient());
 		Assert.assertEquals("StackHospital treatNextPatient incorrect.", s1, sh1.treatNextPatient());
 	}
+	
+	@Test
+	public void QueueHospitalTest()
+	{
+		QueueHospital<HealthyPerson> qh1 = new QueueHospital<HealthyPerson>();
+		HealthyPerson h1 = new HealthyPerson("Zandi", 21, "checkup");
+		HealthyPerson h2 = new HealthyPerson("Megan", 19, "checkup");
+		
+		qh1.addPatient(h1);
+		Assert.assertEquals("QueueHospital check incorrect.", h1, qh1.nextPatient());
+		qh1.addPatient(h2);
+		Assert.assertEquals("QueueHospital check incorrect.", h1, qh1.nextPatient());
+		
+		Assert.assertEquals("QueueHospital allPatientInfo incorrect.", h1.toString() + h2.toString(), qh1.allPatientInfo());
+		Assert.assertEquals("QueueHospital toString incorrect.", "A QueueHospital-type hospital with 2 patients.", qh1.toString());
+		
+		Assert.assertEquals("StackHospital treatNextPatient incorrect.", h1, qh1.treatNextPatient());
+		Assert.assertEquals("StackHospital treatNextPatient incorrect.", h2, qh1.treatNextPatient());
+	}
 }
