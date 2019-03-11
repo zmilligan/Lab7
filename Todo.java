@@ -28,6 +28,9 @@ Tasks:
 20. PQueue next patient methods
 21. PQueue add method
 22. Changed personTest to PersonAnimal test, add animal tests
+23. SHospital tests
+24. QHospital tests
+25. PQHospital tests
 
 Estimated Time (minutes):
 1. 25
@@ -52,6 +55,9 @@ Estimated Time (minutes):
 20. 3
 21. 10
 22. 7
+23. 10
+24. 7
+25. 7
 
 Actual Time (minutes):
 1. 21
@@ -76,4 +82,7 @@ Actual Time (minutes):
 20. 2
 21. 19
 22. 5
+23. 11
+24. 8
+25. 
 */}
