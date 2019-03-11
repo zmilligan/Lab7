@@ -4,10 +4,10 @@ import org.junit.Test;
 /**
  * Lab 7
  *
- * Test class for the Person classes and their comparators.
+ * Test class for the Person and Animal classes and their comparators.
  *
  * @author Zandi Millligan
- * @version 2019-03-07
+ * @version 2019-03-11
  */
 public class PersonAnimalTest
 {
