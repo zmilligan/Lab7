@@ -27,6 +27,7 @@ Tasks:
 19. PQueue type and patientInfo method
 20. PQueue next patient methods
 21. PQueue add method
+22. Changed personTest to PersonAnimal test, add animal tests
 
 Estimated Time (minutes):
 1. 25
@@ -50,6 +51,7 @@ Estimated Time (minutes):
 19. 3
 20. 3
 21. 10
+22. 7
 
 Actual Time (minutes):
 1. 21
@@ -73,4 +75,5 @@ Actual Time (minutes):
 19. 2
 20. 2
 21. 19
+22. 5
 */}
