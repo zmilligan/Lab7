@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 /**
  * Class representing a Hospital that orders its patients in the following way:
@@ -19,7 +19,7 @@ public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>
 	 * The patient priority queue
 	 * I haven't decided yet what type of list would be the best to do, so this is subject to change.
 	 */
-	private ArrayList<PatientType> patients;
+	private PriorityQueue<PatientType> patients;
 	
 	/**
 	 * Initializes the Patient PriorityQueue.
@@ -27,24 +27,23 @@ public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>
 	public PriorityQueueHospital()
 	{
 		//The type of list will need to be updated if changed, but I wanted to have something.
-		patients = new ArrayList<PatientType>();
+		patients = new PriorityQueue<PatientType>();
 	}
 	
 	public void addPatient(PatientType patient)
 	{
-		//TODO: finish method
+		patients.add(patient);
+		//Collections.sort(patients);
 	}
 	
 	public PatientType nextPatient()
 	{
-		return patients.get(0);
+		return patients.peek();
 	}
 	
 	public PatientType treatNextPatient()
 	{
-		PatientType p = patients.get(0);
-		patients.remove(0);
-		return p;
+		return patients.poll();
 	}
 	
 	public int numPatients()
