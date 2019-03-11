@@ -45,7 +45,26 @@ public class HospitalTest
 		Assert.assertEquals("QueueHospital allPatientInfo incorrect.", h1.toString() + h2.toString(), qh1.allPatientInfo());
 		Assert.assertEquals("QueueHospital toString incorrect.", "A QueueHospital-type hospital with 2 patients.", qh1.toString());
 		
-		Assert.assertEquals("StackHospital treatNextPatient incorrect.", h1, qh1.treatNextPatient());
-		Assert.assertEquals("StackHospital treatNextPatient incorrect.", h2, qh1.treatNextPatient());
+		Assert.assertEquals("QueueHospital treatNextPatient incorrect.", h1, qh1.treatNextPatient());
+		Assert.assertEquals("QueueHospital treatNextPatient incorrect.", h2, qh1.treatNextPatient());
+	}
+	
+	@Test
+	public void PriorityQueueHospitalTest()
+	{
+		PriorityQueueHospital<Animal> pqh1 = new PriorityQueueHospital<Animal>();
+		Animal a1 = new Animal("dog", 2);
+		Animal a2 = new Animal("cat", 9);
+		
+		pqh1.addPatient(a1);
+		Assert.assertEquals("PriorityQueueHospital check incorrect.", a1, pqh1.nextPatient());
+		pqh1.addPatient(a2);
+		Assert.assertEquals("PriorityQueueHospital check incorrect.", a2, pqh1.nextPatient());
+		
+		Assert.assertEquals("PriorityQueueHospital allPatientInfo incorrect.", a2.toString() + a1.toString(), pqh1.allPatientInfo());
+		Assert.assertEquals("PriorityQueueHospital toString incorrect.", "A PriorityQueueHospital-type hospital with 2 patients.", pqh1.toString());
+		
+		Assert.assertEquals("PriorityQueueHospital treatNextPatient incorrect.", a2, pqh1.treatNextPatient());
+		Assert.assertEquals("PriorityQueueHospital treatNextPatient incorrect.", a1, pqh1.treatNextPatient());
 	}
 }

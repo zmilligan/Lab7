@@ -53,7 +53,7 @@ public class PriorityQueueHospital<PatientType> extends Hospital<PatientType>
 	
 	public String hospitalType()
 	{
-		return "PriorityQueue";
+		return "PriorityQueueHospital";
 	}
 	
 	public String allPatientInfo()
